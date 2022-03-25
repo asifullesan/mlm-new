@@ -1,0 +1,87 @@
+.nav-section{
+    width: 90%;
+    margin: auto;
+}
+
+.nav{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-end{
+   margin-left: 42%;
+}
+
+.nav-i{
+    font-weight: 700 !important;
+    margin-right: 15px;
+    margin-top: -15px;
+    color: white !important;
+}
+
+#collasible-nav-dropdown{
+    color: white;
+}
+
+.nav-i:hover{
+   border-bottom: 3px solid rgb(185, 13, 185);
+}
+
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-h5{
+    color: rgb(240, 71, 255);
+    font-weight: 700;
+}
+
+.logo-p{
+    color: rgb(1, 146, 1);
+    font-weight: 800;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.n-icon{
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width:  480px) {
+    
+
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo-h5{
+        color: rgb(240, 71, 255);
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+        
+    .logo-p{
+        color: rgb(1, 146, 1);
+        font-weight: 800;
+        font-size: 9px;
+        margin-top: -10px;
+    }
+
+    .nav-section{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .nav-end{
+        margin-left: 0%;
+        margin-top: 10px;
+     }
+}
