@@ -6,13 +6,16 @@ import useAuth from '../../hooks/useAuth';
 import NavSection from '../Shared/NavSection/NavSection'
 import TopSection from '../Shared/TopSection/TopSection'
 import Footer from '../Shared/Footer/Footer'
+import { Link } from 'react-router-dom';
 
 const ComponentName = () => {
 
 
+
     const [loginData, setLoginData] = useState({});
 
-    const { registerUser } = useAuth();
+    
+    const { loginUser, signInWithGoogle} = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -20,26 +23,21 @@ const ComponentName = () => {
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
-        const newLoginData = { ...loginData };
+        const newLoginData = {...loginData};
         newLoginData[field] = value;
         setLoginData(newLoginData);
         console.log(newLoginData)
     }
 
-
     const handleLoginSubmit = e => {
-        if (loginData.password !== loginData.password2) {
-            alert('Your Password Did not Matched');
-            return
-        }
-
-        registerUser(loginData.email, loginData.password, loginData.name, location, history);
-        e.preventDefault();
-
-    }
+        loginUser(loginData.email, loginData.password , location, history);
+    e.preventDefault();
+}
 
 
-  
+const handleGoogleSignIn = ()=> {
+    signInWithGoogle(location, history)
+}
 
 
 
@@ -58,21 +56,21 @@ const ComponentName = () => {
             <div className='formL container'>
                 <h4 className='mis-h1 '>Login</h4>
 
-
                 <form onSubmit={handleLoginSubmit} className="login-form">
-                                <br />
-                                <input className="log-input mt-2" name="name" onChange={handleOnChange} placeholder="Name" />
-                                <br />
-                                <input className="log-input mt-4" type="email" name="email" onChange={handleOnChange} placeholder="Email Address" />
-                            
-                                <input className="log-input mt-4" type="password" name="password" onChange={handleOnChange} placeholder="your Password" />
-                            
-                                <input className="log-input mt-4" type="password" name="password2" onChange={handleOnChange} placeholder="Re-Type your Password" />
-                                <br />
+                                    
 
-                                <Button className="log-b mt-3 btn" type="submit" value="Submit">Register</Button>
                                
-                            </form>
+                                    <input className="log-input mt-4" type="email" name="email" onChange={handleOnChange} placeholder="Email Address" />
+                                    <br />
+                                    <input className="log-input mt-4" type="password" name="password" onChange={handleOnChange} placeholder="Password" />
+                                    <br />
+
+                                    <Button className="log-b mt-3 btn" type="submit" value="Submit">Login</Button>
+                                    <p className="mt-4 devide">--------------------------------Or------------------------------</p>
+                                    <Button onClick={handleGoogleSignIn} className="log-b btnr mt-">Login With Google</Button>
+                                    <p className="mt-3 arr">Don't Have An Account?<span className="regis ms-2"><Link to="/register">Register</Link></span></p>
+                                </form>
+               
 
 
             </div>

@@ -37,7 +37,7 @@ const ComponentName = () => {
                                 <NavDropdown.Item as={Link} to='/personal-info'><FaCheckDouble className='n-icon' />Personal Info</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to='/profile-update'><FaCheckDouble className='n-icon' />Profile Update</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to='/uni-level-tree'><FaCheckDouble className='n-icon' />Unilevel Tree</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3"><FaCheckDouble className='n-icon' />Password Change</NavDropdown.Item>
+                                {/* <NavDropdown.Item href="#action/3.3"><FaCheckDouble className='n-icon' />Password Change</NavDropdown.Item> */}
                                 <NavDropdown.Item onClick={logOut}><FaCheckDouble className='n-icon' />Logout</NavDropdown.Item>
 
                             </NavDropdown>
@@ -54,12 +54,13 @@ const ComponentName = () => {
                                 <NavDropdown.Item as={Link} to='/joining'><FaCheckDouble className='n-icon' />Joining</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3"><FaCheckDouble className='n-icon' />News</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to='/complain-box'><FaCheckDouble className='n-icon' />Complain Box</NavDropdown.Item>
-
+                                <NavDropdown.Item as={Link} to='/dashboard'><FaCheckDouble className='n-icon' />Dashboard</NavDropdown.Item>
+{/* 
                                 {
                                     admin &&
                                     <NavDropdown.Item as={Link} to='/dashboard'><FaCheckDouble className='n-icon' />Dashboard</NavDropdown.Item>
 
-                                }
+                                } */}
 
                                 
                             </NavDropdown>

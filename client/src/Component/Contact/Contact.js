@@ -74,11 +74,11 @@ const ComponentName = () => {
                 <div className='c-i-in'>
                     <div className='d-flex mt-4'>
                         <MdLocationPin className='con-i' />
-                        <h6 className='con-h6'>CT House, Unit 8, Office No 8H,<br/> Providence Mahe Seychelles</h6>
+                        <h6 className='con-h6'> প্লট ॥ ০১ সি.ডব্লিউ,এন.বি, রোড ॥ <br/>৪৫, গুলশান-০২, ঢাকা-১২১২</h6>
                     </div>
                     <div className='d-flex mt-4'>
                         <MdPhoneEnabled className='con-i' />
-                        <h6 className='con-h6 mt-2'>+91-976-636-2403</h6>
+                        <h6 className='con-h6 mt-2'> ০১৮-৮৬৫৯-৮১৭৪</h6>
                     </div>
                     <div className='d-flex mt-4'>
                         <MdEmail className='con-i' />

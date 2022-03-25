@@ -15,7 +15,7 @@ const componentName = () => {
                 <div className='top-section'>
                     <div className='top-flex'>
                         <div className='d-flex'>
-                            <h6 className='top-info'>Phone: +91-976-636-2403</h6>
+                            <h6 className='top-info'>Phone: 018-8659-8174</h6>
                             <h6 className='top-info ms-5'>Email: sales@dotphi.com</h6>
                         </div>
                         <div className=''>

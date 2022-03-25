@@ -56,3 +56,24 @@
         width: 100%;
     }
 }
+
+
+
+@media only screen and (min-width: 481px) and (max-width:  768px) {
+    .hf-i{
+        height: 200px;
+        width: 100%;
+    }
+
+    .hf-info{
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .hf-ib{
+        border: 1px solid rgb(221, 20, 221);
+        padding: 5px;
+        height: 213px;
+        margin-top: 30px;
+    }
+}

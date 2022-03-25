@@ -104,7 +104,7 @@ const ComponentName = () => {
                     </label>
                     <br />
                     <h6 className='up-p mt-2'>Phone Number</h6>
-                    <input className="up-input" placeholder="Name" onChange={e => setNumber(e.target.value)} />
+                    <input className="up-input" placeholder="Number" onChange={e => setNumber(e.target.value)} />
                    
                     <br />
                     <h6 className='up-p mt-2'>Your Name</h6>

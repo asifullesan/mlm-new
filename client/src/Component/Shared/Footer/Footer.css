@@ -1,10 +1,13 @@
 .footer{
     background-color: black;
     color: white;
-    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .copy{
     text-align: center;
     padding-top: 40px;
+    border-top: 1px solid white;
+    
 }

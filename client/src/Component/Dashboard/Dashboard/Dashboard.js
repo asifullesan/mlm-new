@@ -68,7 +68,7 @@ function Dashboard(props) {
                         <Link className='li-d' to={`${url}/user-request`}>User Request</Link>
                     </ListItem>
                     <ListItem >
-                        <Link className='li-d' to={`${url}/new-user`}>New Register</Link>
+                        {/* <Link className='li-d' to={`${url}/new-user`}>New Register</Link> */}
                     </ListItem>
                     <ListItem >
                         <Link className='li-d' to={`${url}/withdraw-request`}>Withdraw Request</Link>

@@ -15,6 +15,7 @@ import ComplainBox from './Component/ComplainBox/ComplainBox'
 import Joining from './Component/Joining/Joining'
 import UniLevelTree from './Component/UniLavelTree/UniLevelTree'
 import Login from './Component/Login/Login'
+import Register from './Component/Register/Register'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from './Component/Dashboard/Dashboard/Dashboard';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
@@ -79,6 +80,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
             </Route>
           </Switch>
         </Router>

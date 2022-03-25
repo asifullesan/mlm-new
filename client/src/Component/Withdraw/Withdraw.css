@@ -55,3 +55,14 @@
         height: 380px;
     }
 }
+
+
+@media only screen and (min-width: 481px) and (max-width:  768px) {
+    .w-bill{
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+        height: 380px;
+    }
+}
